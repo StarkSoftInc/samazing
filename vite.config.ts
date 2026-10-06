@@ -5,8 +5,8 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
+    base: process.env.VITE_BASE || './', // Supports /samazing/ or relative path for GitHub Pages
     plugins: [react(), tailwindcss()],
-    base: '/samazing/',
     resolve: {
       alias: {
         '@': path.resolve(__dirname, '.'),
