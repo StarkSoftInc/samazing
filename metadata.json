@@ -1,0 +1,6 @@
+{
+  "name": "S'AMAZING NUTRITION - Artisanal High-Protein Desserts",
+  "description": "S'AMAZING NUTRITION — Protein never felt softer. Artisanal high-protein whipped dessert mixes inspired by Italian pastry science.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
