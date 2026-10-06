@@ -29,14 +29,12 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
+          # cache: 'npm' # Removed to prevent "lock file not found" error
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install # Changed from npm ci to support setups without package-lock.json
 
       - name: Build project with Vite
-        env:
-          VITE_BASE: '/samazing/'
         run: npm run build
 
       - name: Setup Pages
