@@ -29,10 +29,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          # cache: 'npm' # Removed to prevent "lock file not found" error
 
       - name: Install dependencies
-        run: npm install # Changed from npm ci to support setups without package-lock.json
+        run: npm install --legacy-peer-deps
 
       - name: Build project with Vite
         run: npm run build
