@@ -1,7 +1,7 @@
 import React from 'react';
 import { useApp } from '../context/AppContext';
 import { TRANSLATIONS } from '../data/translations';
-import { Milk, Sparkles, Snowflake, HeartHandshake } from 'lucide-react';
+import { Milk, Wind, Snowflake, HeartHandshake } from 'lucide-react';
 
 export const HowItWorks: React.FC = () => {
   const { language } = useApp();
@@ -18,7 +18,7 @@ export const HowItWorks: React.FC = () => {
       stepNum: '02',
       title: t.howItWorks.step2Title,
       desc: t.howItWorks.step2Desc,
-      icon: Sparkles,
+      icon: Wind,
     },
     {
       stepNum: '03',

@@ -2,7 +2,7 @@ import React from 'react';
 import { useApp } from '../context/AppContext';
 import { TRANSLATIONS } from '../data/translations';
 import founderImg from '../assets/images/founder_samanta_1791293395209.jpg';
-import { Award, Sparkles, Heart } from 'lucide-react';
+import { Award, Heart } from 'lucide-react';
 
 export const AboutSamanta: React.FC = () => {
   const { language } = useApp();
@@ -47,7 +47,7 @@ export const AboutSamanta: React.FC = () => {
 
             <div className="p-4 bg-[#EAE5D9]/60 rounded-xl border border-[#E5E0D4] flex items-center gap-4">
               <div className="p-3 bg-[#2D3A34] text-[#D4A359] rounded-xl shrink-0">
-                <Sparkles className="w-5 h-5" />
+                <Award className="w-5 h-5" />
               </div>
               <p className="text-xs text-[#2D3A34] font-medium leading-relaxed">
                 {language === 'DE'

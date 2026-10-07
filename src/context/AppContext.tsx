@@ -19,10 +19,6 @@ interface AppContextType {
   setActiveRecipeId: (id: string | null) => void;
   legalModalType: string | null;
   setLegalModalType: (type: string | null) => void;
-  isAppGuideOpen: boolean;
-  setIsAppGuideOpen: (open: boolean) => void;
-  isAutotestOpen: boolean;
-  setIsAutotestOpen: (open: boolean) => void;
   isAnalyticsOpen: boolean;
   setIsAnalyticsOpen: (open: boolean) => void;
   preOrderInterests: PreOrderInterest[];
@@ -98,11 +94,9 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
   const [isRecipesModalOpen, setIsRecipesModalOpen] = useState<boolean>(false);
   const [activeRecipeId, setActiveRecipeId] = useState<string | null>(null);
   const [legalModalType, setLegalModalType] = useState<string | null>(null);
-  const [isAppGuideOpen, setIsAppGuideOpen] = useState<boolean>(false);
-  const [isAutotestOpen, setIsAutotestOpen] = useState<boolean>(false);
   const [isAnalyticsOpen, setIsAnalyticsOpen] = useState<boolean>(false);
 
-  const version = 'FlashLearn v 1.0.0';
+  const version = 'S\'AMAZING v 1.0.0';
 
   useEffect(() => {
     localStorage.setItem(STORAGE_KEY_LANG, language);
@@ -226,10 +220,6 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
         setActiveRecipeId,
         legalModalType,
         setLegalModalType,
-        isAppGuideOpen,
-        setIsAppGuideOpen,
-        isAutotestOpen,
-        setIsAutotestOpen,
         isAnalyticsOpen,
         setIsAnalyticsOpen,
         preOrderInterests,

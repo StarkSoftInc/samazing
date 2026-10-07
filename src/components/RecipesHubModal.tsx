@@ -2,7 +2,7 @@ import React from 'react';
 import { useApp } from '../context/AppContext';
 import { RECIPES } from '../data/recipes';
 import { TRANSLATIONS } from '../data/translations';
-import { X, Clock, Users, ExternalLink, Sparkles, ChefHat } from 'lucide-react';
+import { X, Clock, Users, ExternalLink, ChefHat } from 'lucide-react';
 
 export const RecipesHubModal: React.FC = () => {
   const {
@@ -143,7 +143,6 @@ export const RecipesHubModal: React.FC = () => {
           <div className="space-y-8">
             <div className="space-y-2">
               <div className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-widest text-[#9E4A3B]">
-                <Sparkles className="w-4 h-4" />
                 <span>RECIPE HUB</span>
               </div>
               <h2 className="text-3xl font-serif font-bold text-[#1E2421]">

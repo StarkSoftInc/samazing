@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useApp } from '../context/AppContext';
 import { PRODUCTS } from '../data/products';
 import { TRANSLATIONS } from '../data/translations';
-import { Sparkles, Plus, Minus, Heart, RefreshCw, CheckCircle2 } from 'lucide-react';
+import { Plus, Minus, Heart, RefreshCw, CheckCircle2 } from 'lucide-react';
 
 export const MonthlyBoxBuilder: React.FC = () => {
   const { language, addToWishlist, setIsWishlistDrawerOpen } = useApp();

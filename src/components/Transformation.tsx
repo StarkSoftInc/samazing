@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useApp } from '../context/AppContext';
 import { TRANSLATIONS } from '../data/translations';
-import { Play, RotateCcw, Volume2, Sparkles, ChevronRight } from 'lucide-react';
+import { Play, RotateCcw, Volume2, ChevronRight } from 'lucide-react';
 
 export const Transformation: React.FC = () => {
   const { language } = useApp();
@@ -24,7 +24,6 @@ export const Transformation: React.FC = () => {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-12 space-y-3">
           <div className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-widest text-[#9E4A3B]">
-            <Sparkles className="w-4 h-4" />
             <span>{language === 'DE' ? 'AERIERUNGSSPEKTAKEL' : 'AERATION SCIENCE'}</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-serif font-bold text-[#1E2421]">

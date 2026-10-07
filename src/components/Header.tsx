@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useApp } from '../context/AppContext';
 import { TRANSLATIONS } from '../data/translations';
-import { Heart, Menu, X, Sparkles, BookOpen, CheckCircle, BarChart2 } from 'lucide-react';
+import { Heart, Menu, X, BarChart2 } from 'lucide-react';
 
 export const Header: React.FC = () => {
   const {
@@ -10,8 +10,6 @@ export const Header: React.FC = () => {
     wishlist,
     setIsWishlistDrawerOpen,
     setIsRecipesModalOpen,
-    setIsAppGuideOpen,
-    setIsAutotestOpen,
     setIsAnalyticsOpen,
     version,
   } = useApp();
@@ -33,7 +31,6 @@ export const Header: React.FC = () => {
     <header className="sticky top-0 z-40 bg-[#F6F4EE]/95 backdrop-blur-md border-b border-[#E5E0D4] transition-all">
       {/* Announcement Bar */}
       <div className="bg-[#2D3A34] text-[#F6F4EE] text-xs py-2 px-4 text-center font-medium tracking-wide flex items-center justify-center gap-2">
-        <Sparkles className="w-3.5 h-3.5 text-[#D4A359] shrink-0" />
         <span className="truncate">{t.banner.freeShipping}</span>
         <span className="hidden md:inline-block opacity-60 text-[10px] ml-2 pl-2 border-l border-[#45544C]">
           {version}
@@ -148,26 +145,6 @@ export const Header: React.FC = () => {
             </button>
           </div>
 
-          {/* App Guide Button */}
-          <button
-            onClick={() => setIsAppGuideOpen(true)}
-            className="hidden md:flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-[#2D3A34] bg-[#EAE5D9] hover:bg-[#DED7C7] rounded-full transition-colors"
-            title="Open App Guide"
-          >
-            <BookOpen className="w-3.5 h-3.5 text-[#9E4A3B]" />
-            <span>Guide</span>
-          </button>
-
-          {/* Autotest Suite Button */}
-          <button
-            onClick={() => setIsAutotestOpen(true)}
-            className="hidden xl:flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-[#2D3A34] bg-[#EAE5D9] hover:bg-[#DED7C7] rounded-full transition-colors"
-            title="Run Autotest Verification"
-          >
-            <CheckCircle className="w-3.5 h-3.5 text-emerald-600" />
-            <span>Autotest</span>
-          </button>
-
           {/* Wishlist Drawer Button */}
           <button
             onClick={() => setIsWishlistDrawerOpen(true)}
@@ -269,26 +246,6 @@ export const Header: React.FC = () => {
           </div>
 
           <div className="pt-4 border-t border-[#E5E0D4] flex flex-col gap-2">
-            <button
-              onClick={() => {
-                setMobileMenuOpen(false);
-                setIsAppGuideOpen(true);
-              }}
-              className="flex items-center justify-center gap-2 py-2.5 px-4 bg-[#EAE5D9] text-[#2D3A34] text-xs font-semibold rounded-full"
-            >
-              <BookOpen className="w-4 h-4 text-[#9E4A3B]" />
-              <span>App Guide & User Documentation</span>
-            </button>
-            <button
-              onClick={() => {
-                setMobileMenuOpen(false);
-                setIsAutotestOpen(true);
-              }}
-              className="flex items-center justify-center gap-2 py-2.5 px-4 bg-[#EAE5D9] text-[#2D3A34] text-xs font-semibold rounded-full"
-            >
-              <CheckCircle className="w-4 h-4 text-emerald-600" />
-              <span>Run Autotest Verification</span>
-            </button>
             <button
               onClick={() => {
                 setMobileMenuOpen(false);

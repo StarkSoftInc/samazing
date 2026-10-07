@@ -2,7 +2,7 @@ import React from 'react';
 import { useApp } from '../context/AppContext';
 import { RECIPES } from '../data/recipes';
 import { TRANSLATIONS } from '../data/translations';
-import { Clock, Users, ArrowUpRight, Sparkles } from 'lucide-react';
+import { Clock, Users, ArrowUpRight } from 'lucide-react';
 
 export const RecipesSection: React.FC = () => {
   const { language, setIsRecipesModalOpen, setActiveRecipeId } = useApp();
@@ -18,7 +18,6 @@ export const RecipesSection: React.FC = () => {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div className="space-y-3 max-w-2xl">
             <div className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-widest text-[#9E4A3B]">
-              <Sparkles className="w-4 h-4" />
               <span>CULINARY CREATIONS</span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-serif font-bold text-[#1E2421]">

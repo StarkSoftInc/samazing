@@ -1,7 +1,7 @@
 import React from 'react';
 import { useApp } from '../context/AppContext';
 import { TRANSLATIONS } from '../data/translations';
-import { Sparkles, Heart, BarChart2, BookOpen, CheckCircle } from 'lucide-react';
+import { Heart, BarChart2 } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   const {
@@ -9,8 +9,6 @@ export const Footer: React.FC = () => {
     setLanguage,
     setLegalModalType,
     setIsAnalyticsOpen,
-    setIsAppGuideOpen,
-    setIsAutotestOpen,
     version,
   } = useApp();
 
@@ -111,20 +109,6 @@ export const Footer: React.FC = () => {
               >
                 <BarChart2 className="w-3.5 h-3.5" />
                 <span>{t.footer.analytics}</span>
-              </button>
-              <button
-                onClick={() => setIsAppGuideOpen(true)}
-                className="flex items-center gap-1.5 hover:text-white text-left"
-              >
-                <BookOpen className="w-3.5 h-3.5 text-[#9E4A3B]" />
-                <span>App Guide</span>
-              </button>
-              <button
-                onClick={() => setIsAutotestOpen(true)}
-                className="flex items-center gap-1.5 hover:text-white text-left"
-              >
-                <CheckCircle className="w-3.5 h-3.5 text-emerald-400" />
-                <span>Autotest Verification</span>
               </button>
 
               <div className="pt-2">

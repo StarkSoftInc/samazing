@@ -1,7 +1,7 @@
 import React from 'react';
 import { useApp } from '../context/AppContext';
 import { TRANSLATIONS } from '../data/translations';
-import { Gift, ShieldAlert, Sparkles, Check } from 'lucide-react';
+import { Gift, ShieldAlert, Check } from 'lucide-react';
 import completeKitImg from '../assets/images/complete_kit_bundle_1791293377123.jpg';
 
 export const First100Orders: React.FC = () => {

@@ -2,7 +2,7 @@ import React from 'react';
 import { useApp } from '../context/AppContext';
 import { TRANSLATIONS } from '../data/translations';
 import heroImg from '../assets/images/hero_samazing_box_1791293299051.jpg';
-import { Sparkles, ArrowRight, Heart } from 'lucide-react';
+import { ArrowRight, Heart } from 'lucide-react';
 
 export const Hero: React.FC = () => {
   const { language, addToWishlist, setIsWishlistDrawerOpen } = useApp();
@@ -23,7 +23,6 @@ export const Hero: React.FC = () => {
           {/* Left Text Content */}
           <div className="lg:col-span-6 space-y-6 text-left">
             <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-[#9E4A3B]">
-              <Sparkles className="w-4 h-4" />
               <span>{t.hero.kicker}</span>
             </div>
 

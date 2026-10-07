@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useApp } from '../context/AppContext';
 import { TRANSLATIONS } from '../data/translations';
-import { Mail, ShieldCheck, Sparkles, CheckCircle2 } from 'lucide-react';
+import { Mail, ShieldCheck, CheckCircle2 } from 'lucide-react';
 
 export const WaitingListSection: React.FC = () => {
   const { language, submitPreOrderInterest, setLegalModalType } = useApp();
@@ -39,7 +39,6 @@ export const WaitingListSection: React.FC = () => {
         
         <div className="space-y-3">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-[#3B4A43] text-[#D4A359] text-xs font-semibold rounded-full uppercase tracking-wider">
-            <Sparkles className="w-3.5 h-3.5" />
             <span>EARLY ACCESS & PRE-ORDER REGISTER</span>
           </div>
           <h2 className="text-3xl sm:text-5xl font-serif font-bold text-white">

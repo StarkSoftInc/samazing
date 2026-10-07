@@ -24,8 +24,6 @@ import { WishlistDrawer } from './components/WishlistDrawer';
 import { RecipesHubModal } from './components/RecipesHubModal';
 import { LegalModal } from './components/LegalModal';
 import { InterestAnalyticsModal } from './components/InterestAnalyticsModal';
-import { AppGuideModal } from './components/AppGuideModal';
-import { AutotestRunnerModal } from './components/AutotestRunnerModal';
 
 export function MainAppContent() {
   return (
@@ -90,8 +88,6 @@ export function MainAppContent() {
       <RecipesHubModal />
       <LegalModal />
       <InterestAnalyticsModal />
-      <AppGuideModal />
-      <AutotestRunnerModal />
     </div>
   );
 }

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useApp } from '../context/AppContext';
 import { PRODUCTS } from '../data/products';
 import { TRANSLATIONS } from '../data/translations';
-import { X, Heart, Plus, Minus, Check, Sparkles, Zap, ShieldCheck } from 'lucide-react';
+import { X, Heart, Plus, Minus, Check, Zap, ShieldCheck } from 'lucide-react';
 
 export const ProductDetailModal: React.FC = () => {
   const {

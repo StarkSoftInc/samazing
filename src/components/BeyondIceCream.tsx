@@ -1,7 +1,7 @@
 import React from 'react';
 import { useApp } from '../context/AppContext';
 import { TRANSLATIONS } from '../data/translations';
-import { Sparkles, ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 import chocoDreamImg from '../assets/images/flavour_choco_dream_1791293324689.jpg';
 import mangoSunsetImg from '../assets/images/flavour_mango_sunset_1791293340114.jpg';
 import pistachioGlowImg from '../assets/images/flavour_pistachio_glow_1791293351145.jpg';
@@ -42,7 +42,6 @@ export const BeyondIceCream: React.FC = () => {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div className="space-y-3 max-w-2xl">
             <div className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-widest text-[#9E4A3B]">
-              <Sparkles className="w-4 h-4" />
               <span>MULTIFUNCTIONAL BASE</span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-serif font-bold text-[#1E2421]">

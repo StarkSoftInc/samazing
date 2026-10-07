@@ -2,7 +2,7 @@ import React from 'react';
 import { useApp } from '../context/AppContext';
 import { PRODUCTS } from '../data/products';
 import { TRANSLATIONS } from '../data/translations';
-import { Heart, Sparkles, Eye, Plus } from 'lucide-react';
+import { Heart, Eye, Plus } from 'lucide-react';
 
 export const FlavoursGrid: React.FC = () => {
   const { language, setSelectedProductModal, addToWishlist, setIsWishlistDrawerOpen } = useApp();
@@ -17,7 +17,6 @@ export const FlavoursGrid: React.FC = () => {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
           <div className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-widest text-[#9E4A3B]">
-            <Sparkles className="w-4 h-4" />
             <span>5 FLAVOURS · 5 MOODS</span>
           </div>
           <h2 className="text-3xl sm:text-5xl font-serif font-bold text-[#1E2421]">

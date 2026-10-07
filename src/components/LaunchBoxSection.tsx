@@ -2,7 +2,7 @@ import React from 'react';
 import { useApp } from '../context/AppContext';
 import { PRODUCTS } from '../data/products';
 import { TRANSLATIONS } from '../data/translations';
-import { Sparkles, Heart, CheckCircle2 } from 'lucide-react';
+import { Heart, CheckCircle2 } from 'lucide-react';
 import heroImg from '../assets/images/hero_samazing_box_1791293299051.jpg';
 
 export const LaunchBoxSection: React.FC = () => {
@@ -39,7 +39,6 @@ export const LaunchBoxSection: React.FC = () => {
           {/* Details Right */}
           <div className="lg:col-span-6 space-y-6 text-left">
             <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-[#D4A359]">
-              <Sparkles className="w-4 h-4" />
               <span>THE TASTING BOX</span>
             </div>
 

@@ -11,8 +11,6 @@ export const TRANSLATIONS = {
       monthlyBox: 'Monthly Box',
       wishlist: 'Wishlist',
       interest: 'Pre-Order Interest',
-      appGuide: 'App Guide',
-      autotest: 'Autotest Suite',
       analytics: 'Interest Analytics',
     },
     // Top Banner
@@ -155,7 +153,7 @@ export const TRANSLATIONS = {
     },
     // Footer
     footer: {
-      copy: '© 2026 S\'AMAZING NUTRITION. All rights reserved. Powered by FlashLearn v 1.0.0',
+      copy: '© 2026 S\'AMAZING NUTRITION. All rights reserved.',
       legalTitle: 'Legal & Compliance',
       impressum: 'Impressum',
       privacy: 'Datenschutzerklärung / Privacy Policy',
@@ -179,8 +177,6 @@ export const TRANSLATIONS = {
       monthlyBox: 'Monats-Box',
       wishlist: 'Wunschliste',
       interest: 'Vorbestell-Interesse',
-      appGuide: 'App-Guide',
-      autotest: 'Autotest-Suite',
       analytics: 'Interessen-Analyse',
     },
     // Top Banner
@@ -323,7 +319,7 @@ export const TRANSLATIONS = {
     },
     // Footer
     footer: {
-      copy: '© 2026 S\'AMAZING NUTRITION. Alle Rechte vorbehalten. Powered by FlashLearn v 1.0.0',
+      copy: '© 2026 S\'AMAZING NUTRITION. Alle Rechte vorbehalten.',
       legalTitle: 'Rechtliches & Impressum',
       impressum: 'Impressum',
       privacy: 'Datenschutzerklärung / Privacy Policy',
